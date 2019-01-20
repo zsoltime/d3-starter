@@ -2,6 +2,7 @@ const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
@@ -52,6 +53,12 @@ module.exports = (env, argv) => {
       new MiniCssExtractPlugin({
         filename: 'style.[hash].css',
       }),
+      new webpack.HotModuleReplacementPlugin(),
     ],
+    devServer: {
+      contentBase: path.join(__dirname, 'src'),
+      hot: true,
+      overlay: true,
+    },
   };
 };
