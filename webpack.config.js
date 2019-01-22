@@ -10,6 +10,7 @@ module.exports = (env, argv) => {
   return {
     entry: './src/index.js',
     output: {
+      filename: '[name].[hash].js',
       path: path.join(__dirname, 'dist'),
     },
     module: {
