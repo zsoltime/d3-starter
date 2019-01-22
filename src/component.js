@@ -1,4 +1,4 @@
-const addBackground = (selection, { height, width }) => {
+export const addBackground = (selection, { height, width }) => {
   const background = selection.selectAll('rect').data([null]);
 
   background
@@ -10,7 +10,7 @@ const addBackground = (selection, { height, width }) => {
     .attr('width', width);
 };
 
-const addText = (selection, { height, width }) => {
+export const addText = (selection, { height, width }) => {
   const text = selection.selectAll('text').data([null]);
 
   text

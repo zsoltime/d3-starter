@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component addBackground matches snapshot 1`] = `
+<svg>
+  <rect
+    fill="#edf6f0"
+    height="400"
+    width="600"
+  />
+</svg>
+`;
+
+exports[`component addText matches snapshot 1`] = `
+<svg>
+  <text
+    alignment-baseline="middle"
+    style="font-size: 10vmin; font-weight: 100;"
+    text-anchor="middle"
+    transform="translate(300, 200)"
+  >
+    D3.js Starter
+  </text>
+</svg>
+`;
+
+exports[`component component matches snapshot 1`] = `
+<body>
+  <svg
+    height="400"
+    width="600"
+  >
+    <rect
+      fill="#edf6f0"
+      height="400"
+      width="600"
+    />
+    <text
+      alignment-baseline="middle"
+      style="font-size: 10vmin; font-weight: 100;"
+      text-anchor="middle"
+      transform="translate(300, 200)"
+    >
+      D3.js Starter
+    </text>
+  </svg>
+</body>
+`;
